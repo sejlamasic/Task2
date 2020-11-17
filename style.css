@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
 }
-
-body {
+/*Center body*/
+ body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,51 +14,52 @@ body {
 .main-container {
   position: absolute;
   top: 5;
-  /*Dimenzije*/
+/*Dimensions*/
   width: 400px;
   height: 400px;
-  /*Krug*/
+/*Circle*/
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   border-radius: 200px;
   background: red;
-  /*Centrirat items*/
+/*Centrirat items*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .border {
-    /*Dimenzije*/
+/*Dimensions*/
     width: 450px;
     height: 450px;
-    /*Krug*/
+/*Circle*/
     -webkit-border-radius: 450px;
     -moz-border-radius: 450px;
     border-radius: 450px;
     background: transparent;
-    /*Centrirat items*/
+/*Center items*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 5px dashed;
     animation: rotation 10s infinite linear;
-    /*border colors*/
+/*border colors*/
     border-top-color: blue;
     border-right-color: blue;
     border-bottom-color: yellow;
     border-left-color: yellow;
   }
-  /*opposite direction*/
-.border.open {
+ /*opposite direction*/
+.border.clicked {
   animation: rotation 10s infinite reverse;
 }
-@keyframes rotation {
-  from {
+/*rotation*/
+ @keyframes rotation {
+   from {
     transform: rotate(0deg);
-  }
-  to {
+   }
+   to {
     transform: rotate(359deg);
   }
 }
